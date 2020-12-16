@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>BMI Calculator</title>
+</head>
+<body>
+	<header>
+		<h1 class="container">BMI Calculator</h1>
+	</header>
+	<main class="container">
+		<form>
+			<div>
+				<input name="height" placeholder="Height" type="text">
+				<select name="height-unit">
+					<option value="m">m.</option>
+					<option value="cm">cm.</option>
+					<option value="ft">ft.</option>
+				</select>
+			</div>
+			<div>
+				<input name="weight" placeholder="Weight" type="text">
+				<select name="weight-unit">
+					<option value="kg">kg.</option>
+					<option value="lb">lb.</option>
+				</select>
+			</div>
+			<input type="button" value="Calculate">
+		</form>
+		<table>
+			<thead>
+				<tr>
+					<th>Category</th>
+					<th>IMC(kg/m<sup>2</sup>)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr id="delgadez_severa">
+					<td>Delgadez severa</td>
+					<td>< 16.00</td>
+				</tr>
+				<tr id="delgadez_moderada">
+					<td>Delgadez moderada</td>
+					<td>16.00-16.99</td>
+				</tr>
+				<tr id="delgadez_leve">
+					<td>Delgadez leve</td>
+					<td>17.00-18.49</td>
+				</tr>
+				<tr id="normal">
+					<td>Normal</td>
+					<td>18.50-24.99</td>
+				</tr>
+				<tr id="sobrepeso">
+					<td>Sobrepeso</td>
+					<td>25.00-29.99</td>
+				</tr>
+				<tr id="obesidad_leve">
+					<td>Obesidad leve</td>
+					<td>30.00-34.99</td>
+				</tr>
+				<tr id="obesidad_media">
+					<td>Obesidad media</td>
+					<td>35.00-39.99</td>
+				</tr>
+				<tr id="obesidad_morbida">
+					<td>Obesidad mórbida</td>
+					<td>>= 40.00</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+</body>
+</html>
