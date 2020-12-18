@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 70%;
+	margin: auto;
+}
+
+header{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid gainsboro;
+}
+
+main {
+	display: flex;
+	padding-top: 50px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+form, table{
+	width: 45%;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+}
+
+input[type="text"]{
+	padding: 10px 0px 5px 5px;
+	font-size: 1.1rem;
+}
+
+select{
+	padding: 10px 0px 5px 5px;
+	font-size: 1.05rem;
+	border:none;
+}
+
+input[type="button"]{
+	font-size: 1.05rem;
+	padding: 7px 0px;
+	width: 40%;
+}
