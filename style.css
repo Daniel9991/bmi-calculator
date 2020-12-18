@@ -4,31 +4,50 @@
 	box-sizing: border-box;
 }
 
+
 .container{
 	width: 70%;
 	margin: auto;
 }
 
+main{
+	padding-top: 100px
+}
+
+@media screen and (max-width: 900px){
+
+	.container{
+		width: 40%;
+		margin-left: 25%;
+		margin-right: 35%;
+	}
+	
+	main{
+		flex-direction: column;
+		height: 500px;
+		padding-top: 50px;
+	}
+}
+
 header{
-	padding-top: 30px;
+	padding-top: 50px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid gainsboro;
 }
 
 main {
 	display: flex;
-	padding-top: 50px;
 	justify-content: space-between;
 	flex-wrap: wrap;
-}
-
-form, table{
-	width: 45%;
 }
 
 form{
 	display: flex;
 	flex-direction: column;
+	height: 200px;
+	width: 300px;
+	justify-content: space-between;
+	border: 1px solid;
 }
 
 input[type="text"]{
@@ -39,7 +58,6 @@ input[type="text"]{
 select{
 	padding: 10px 0px 5px 5px;
 	font-size: 1.05rem;
-	border:none;
 }
 
 input[type="button"]{
@@ -47,3 +65,9 @@ input[type="button"]{
 	padding: 7px 0px;
 	width: 40%;
 }
+
+table{
+	border: 1px solid;
+	width: 300px;
+}
+
