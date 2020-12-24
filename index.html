@@ -8,12 +8,12 @@
 </head>
 <body>
 	<header>
-		<h1 class="container">BMI Calculator</h1>
+		<h1 class="container">Body Mass Index Calculator</h1>
 	</header>
-	<main class="container">
+	<main class="container" id="main-content">
 		<form>
 			<div class="entry-group">
-				<input name="height" placeholder="Height" type="text">
+				<input id="height" placeholder="Height" type="text">
 				<select name="height-unit">
 					<option value="m">m.</option>
 					<option value="cm">cm.</option>
@@ -21,56 +21,43 @@
 				</select>
 			</div>
 			<div class="entry-group">
-				<input name="weight" placeholder="Weight" type="text">
+				<input id="weight" placeholder="Weight" type="text">
 				<select name="weight-unit">
 					<option value="kg">kg.</option>
 					<option value="lb">lb.</option>
 				</select>
 			</div>
-			<input type="button" value="Calculate">
+			<input type="button" id="button" value="Calculate">
 		</form>
 		<table>
-			<thead>
-				<tr>
-					<th>Category</th>
-					<th>IMC(kg/m<sup>2</sup>)</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr id="delgadez_severa">
-					<td>Severe Underweight</td>
-					<td>< 16.00</td>
-				</tr>
-				<tr id="delgadez_moderada">
-					<td>Moderate Underweight</td>
-					<td>16.00-16.99</td>
-				</tr>
-				<tr id="delgadez_leve">
-					<td>Light Underweight</td>
-					<td>17.00-18.49</td>
-				</tr>
-				<tr id="normal">
-					<td>Normal</td>
-					<td>18.50-24.99</td>
-				</tr>
-				<tr id="sobrepeso">
-					<td>Overweight</td>
-					<td>25.00-29.99</td>
-				</tr>
-				<tr id="obesidad_leve">
-					<td>Light Obesity</td>
-					<td>30.00-34.99</td>
-				</tr>
-				<tr id="obesidad_media">
-					<td>Medium Obesity</td>
-					<td>35.00-39.99</td>
-				</tr>
-				<tr id="obesidad_morbida">
-					<td>Excessive Obesity</td>
-					<td>>= 40.00</td>
-				</tr>
-			</tbody>
+			<tr>
+				<td>Underweight</td>
+				<td>< 18.5</td>
+			</tr>
+			<tr>
+				<td>Normal weight</td>
+				<td>18.5 - 25</td>
+			</tr>
+			<tr>
+				<td>Overweight</td>
+				<td>25 - 30</td>
+			</tr>
+			<tr>
+				<td>Obese</td>
+				<td>> 30</td>
+			</tr>
 		</table>
 	</main>
+	<p id="result">Your BMI is: </p>
+	<section>
+		<p class="container">The Body Mass Index is not the most precise indicator. It only acts as a guideline. More info on it <a href="#">here</a>.</p>
+	</section>
+	<footer>
+		<div class="container" id="footer-content">
+			<h2>BMI Calculator</h2>
+			<p>Copyright &copy 2020</p>
+		</div>
+	</footer>
+	<script src="code.js"></script>
 </body>
 </html>
