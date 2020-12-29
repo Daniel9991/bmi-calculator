@@ -3,61 +3,63 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<title>BMI Calculator</title>
 </head>
 <body>
-	<header>
-		<h1 class="container">Body Mass Index Calculator</h1>
-	</header>
-	<main class="container" id="main-content">
-		<form>
-			<div class="entry-group">
-				<input id="height" placeholder="Height" type="text">
-				<select name="height-unit">
-					<option value="m">m.</option>
-					<option value="cm">cm.</option>
-					<option value="ft">ft.</option>
-				</select>
-			</div>
-			<div class="entry-group">
-				<input id="weight" placeholder="Weight" type="text">
-				<select name="weight-unit">
-					<option value="kg">kg.</option>
-					<option value="lb">lb.</option>
-				</select>
-			</div>
-			<input type="button" id="button" value="Calculate">
-		</form>
-		<table>
-			<tr>
-				<td>Underweight</td>
-				<td>< 18.5</td>
-			</tr>
-			<tr>
-				<td>Normal weight</td>
-				<td>18.5 - 25</td>
-			</tr>
-			<tr>
-				<td>Overweight</td>
-				<td>25 - 30</td>
-			</tr>
-			<tr>
-				<td>Obese</td>
-				<td>> 30</td>
-			</tr>
-		</table>
-	</main>
-	<p id="result">Your BMI is: </p>
-	<section>
-		<p class="container">The Body Mass Index is not the most precise indicator. It only acts as a guideline. More info on it <a href="#">here</a>.</p>
-	</section>
+	<div class="non-footer">
+		<header>
+			<h1 class="container">BMI Calculator</h1>
+		</header>
+		<main class="container" id="main-content">
+			<form>
+				<div class="entry-group">
+					<input id="height" placeholder="Height" type="text">
+					<select id="height-unit">
+						<option value="m">m.</option>
+						<option value="cm">cm.</option>
+					</select>
+				</div>
+				<div class="entry-group">
+					<input id="weight" placeholder="Weight" type="text">
+					<select id="weight-unit">
+						<option value="kg">kg.</option>
+						<option value="lb">lb.</option>
+					</select>
+				</div>
+				<input type="button" id="button" value="Calculate">
+			</form>
+			<table>
+				<tr id="underweight">
+					<td>Underweight</td>
+					<td>< 18.5</td>
+				</tr>
+				<tr id="normal">
+					<td>Normal weight</td>
+					<td>18.5 - 25</td>
+				</tr>
+				<tr id="overweight">
+					<td>Overweight</td>
+					<td>25 - 30</td>
+				</tr>
+				<tr id="obese">
+					<td>Obese</td>
+					<td>> 30</td>
+				</tr>
+			</table>
+		</main>
+		<p class="container" id="result">Your BMI is: </p>
+		<section>
+			<p class="container">The BMI is a convenient rule of thumb used to broadly categorize a person as underweight, normal weight, overweight, or obese, based on tissue mass and height. <a href="about.html">Learn more.</a></p>
+		</section>
+	</div>
 	<footer>
 		<div class="container" id="footer-content">
-			<h2>BMI Calculator</h2>
+			<h3>Body Mass Index Calculator</h2>
 			<p>Copyright &copy 2020</p>
 		</div>
 	</footer>
-	<script src="code.js"></script>
+	<script src="js/code.js"></script>
 </body>
 </html>
