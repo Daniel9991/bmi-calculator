@@ -1,3 +1,4 @@
+/* Some general sytyling about width and lateral margins */
 .container{
 	max-width: 850px;
 	width: 85%;
@@ -9,6 +10,7 @@ header h1{
 	text-align: center;
 }
 
+/* Styling to the main content, form and table */
 #main-content{
 	margin-top: 70px;
 	display: flex;
@@ -99,6 +101,7 @@ td:nth-child(even){
 	text-align: right;
 }
 
+/* Styling to the div where the result of the calculation is shown */
 #result{
 	margin-top: 70px;
 	font-size: 1.2rem;
@@ -137,6 +140,7 @@ section p{
 	form, table{
 		width: 100%;
 	}
+	/* Change color and backgound of the div that shows the result to highlight it from the rest */
 	#result{
 		margin-top: 50px;
 		background-color: coral;
@@ -147,6 +151,7 @@ section p{
 
 }
 
+/* Lessens the vertical margins to make things closer in smaller screens */
 @media (max-width: 400px){
 	#main-content{
 		margin-top: 50px;
