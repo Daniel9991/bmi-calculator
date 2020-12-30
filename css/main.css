@@ -5,6 +5,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Made a flex container with min height of 100vh and gave it flex-direction column to push footer to the bottom. */ 
 body{
 	background-color: rgb(214, 227, 255);
 	color: #333;
@@ -27,7 +28,7 @@ header h1{
 	font-weight: normal;
 }
 
-
+/* Some stying to links and hover states */
 a{
 	text-decoration: none;
 	color: coral;

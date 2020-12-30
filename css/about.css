@@ -13,6 +13,7 @@ header div{
 	align-items: center;
 }
 
+/* Styling to the link with button appearance that goes to the calculator page */
 .image-button{
 	padding: 10px 16px;
 	border-radius: 25px;
