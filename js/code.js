@@ -16,6 +16,8 @@ const obese = document.getElementById("obese");
 const button = document.getElementById("button");
 button.addEventListener("click", calculate_bmi);
 
+const result = document.getElementById("result");
+
 
 function calculate_bmi()
 {
@@ -79,9 +81,9 @@ function calculate_bmi()
 
 		let index = (weight / (height * height)).toFixed(2);
 
-		let result = document.getElementById("result");
 		result.textContent = `Your BMI is: ${index}`;
 		result.style.display = "block";
+		result.scrollIntoView({behavior: "smooth"});
 
 		if(index < 18.5)
 		{
