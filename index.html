@@ -15,18 +15,24 @@
 		<main class="container" id="main-content">
 			<form>
 				<div class="entry-group">
-					<input id="height" placeholder="Height" type="text">
-					<select id="height-unit">
-						<option value="m">m.</option>
-						<option value="cm">cm.</option>
-					</select>
+					<div class="entry">
+						<input id="height" placeholder="Height" type="text">
+						<select id="height-unit">
+							<option value="m">m.</option>
+							<option value="cm">cm.</option>
+						</select>
+					</div>
+					<p id="incorrect-height" class="incorrect-input">That's wrong input</p>
 				</div>
 				<div class="entry-group">
-					<input id="weight" placeholder="Weight" type="text">
-					<select id="weight-unit">
-						<option value="kg">kg.</option>
-						<option value="lb">lb.</option>
-					</select>
+					<div class="entry">
+						<input id="weight" placeholder="Weight" type="text">
+						<select id="weight-unit">
+							<option value="kg">kg.</option>
+							<option value="lb">lb.</option>
+						</select>
+					</div>
+					<p id="incorrect-weight" class="incorrect-input">That's wrong input</p>
 				</div>
 				<input type="button" id="button" value="Calculate">
 			</form>
